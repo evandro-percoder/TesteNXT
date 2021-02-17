@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    table, td, th, tfoot {border:solid 1px #000; padding:5px; border-collapse: collapse; width: 50%;}
+    th {background-color:rgb(127, 127, 127); text-align: center; color: white; padding: 8px}
+    td {text-align: center; padding: 8px;}    
+    tr:nth-child(even){background-color: #f2f2f2}   
+</style>
+<body>
+    
+    <h2>LISTA DE PRODUTOS</h2>
+    
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Unidades</th>
+        <th>Preço R$</th>
+      </tr>
+      <tr>
+        <td>Maçã</td>
+        <td>Kg</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Abacate</td>
+        <td>Un</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>KG</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Laranja</td>
+        <td>Duz</td>
+        <td>6,50</td>
+    </tr>
+    <tr>
+        <td>Morango</td>
+        <td>Cx</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>Ovos</td>
+        <td>Cx</td>
+        <td>$11,15</td>
+      </tr>
+      <tr>
+        <td>Cordeiro</td>
+        <td>Kg</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Peitos de frango</td>
+        <td>Kg</td>
+        <td>11</td>
+    </tr>
+      <tr>
+        <td>Amêndoas</td>
+        <td>Cx</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Cocos</td>
+        <td>Un</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Macadâmia</td>
+        <td>cx</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Amendoins</td>
+        <td>Cx</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Nozes</td>
+        <td>Cx</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Couve</td>
+        <td>Un</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Aspargos</td>
+        <td>kg</td>
+        <td>3,50</td>
+    </tr>
+    <tr>
+        <td>Cebola</td>
+        <td>kg</td>
+        <td>6,20</td>
+      </tr>
+      <tr>
+        <td>Salmão</td>
+        <td>kg</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>Tomates</td>
+        <td>kg</td>
+        <td>5,40</td>
+      </tr>
+      <tr>
+        <td>Pimentão</td>
+        <td>kg</td>
+        <td>5,40</td>
+     </tr>
+     <tr>
+        <td>Sardinhas</td>
+        <td>Brown</td>
+        <td>5,40</td>
+    </tr>
+    <tr>
+        <td>Camarão</td>
+        <td>kg</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Brócolis</td>
+        <td>Un</td>
+        <td>3,50</td>
+    </tr>
+    <tr>
+        <td>Cenouras</td>
+        <td>Kg</td>
+        <td>4,30</td>
+    </tr>
+    <tr>
+        <td>Pepino</td>
+        <td>Kg</td>
+        <td>4,30</td>
+    </tr>
+    <tr>
+        <td>Alho</td>
+        <td>Kg</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>Truta</td>
+        <td>Kg</td>
+        <td>7,12</td>
+    </tr>
+    <tr>
+        <td>Atum</td>
+        <td>Brown</td>
+        <td>$250</td>
+    </tr>
+    <tr>
+        <td>Arroz Integral</td>
+        <td>Pct</td>
+        <td>15,20</td>
+    </tr>
+    <tr>
+        <td>Feijão</td>
+        <td>pct</td>
+        <td>8,10</td>
+    </tr>
+    <tr>
+        <td>Azeite extra virgem</td>
+        <td>Un</td>
+        <td>13,60</td>
+    </tr>
+    <tr>
+        <td>Vinagre de maçã</td>
+        <td>Un</td>
+        <td>4,20</td>
+    </tr>
+    <tr>
+        <td>Batatas</td>
+        <td>Kg</td>
+        <td>4,50</td>
+    </tr>
+    <tr>
+        <td>Batata-doce</td>
+        <td>Un</td>
+        <td>4,50</td>
+    </tr>
+    <tr>
+        <td>Leite integral</td>
+        <td>Un</td>
+        <td>3,50</td>
+    </tr>
+    <tr>
+        <td>Queijo</td>
+        <td>Kg</td>
+        <td>2,20</td>
+    </tr>
+     <tr>
+        <td>Iogurte</td>
+        <td>Un</td>
+        <td>10,20</td>
+    </tr>
+     <tr>
+        <td>Aveia</td>
+        <td>Kg</td>
+        <td>2,50</td>
+    </tr>
+    </table>
+
+    <div>
+        <a href="http://127.0.0.1:8000/" class="w3-bar-item w3-button w3-padding-large">Inicío</a>
+        <a href="http://127.0.0.1:8000/admin/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Realizar Cadastro</a>
+    </div>
+</body>
+{% endblock %}
+
